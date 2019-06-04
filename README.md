@@ -26,3 +26,41 @@ It is an online CMS based web solution for medical practitioners to create [Cogn
 - `GraphQL`
 - `Immutable JS`
 - `Redux Form`
+
+# Database Schema
+
+## Cases
+- identifier (UUID)
+- name (String, required)
+- slug (String, createSlug(title))
+- description(String)
+- featuredImage (Blob)- 
+- availableFrom(Date)
+- availableTill(Date)
+- createdAt(Date)
+- updateAt(Date)
+
+## Module
+- identifier(UUID, PRIMARY KEY, REQUIRED)
+- name (String, required)
+- slug (String, createSlug(title))
+- description(String)
+- featuredImage (Blob)
+- linkedCases(array, case IDs)
+- availableFrom(Date)
+- availableTill(Date)
+- createdAt(Date)
+- updateAt(Date)
+- courseProgression(enum, [LINEAR, FREEFORM])
+- modulePrerequisite(array, moduleIDs)
+
+## Tasks
+- identifier(UUID, PRIMARY KEY, REQUIRED)
+- name (String, required)
+- slug (String, createSlug(title))
+- description(String)
+- linkedModules(array, case IDs)
+- tasksPrequisite(array, taskIDs)
+- availableTill(Date)
+- createdAt(Date)
+- updateAt(Date)

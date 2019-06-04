@@ -1,6 +1,6 @@
 # CCBT - Computerised Congitive Based Therapy
 
-It is an online CMS based web solution for medical practitioners to create [Cognitive Based Therapy](https://en.wikipedia.org/wiki/Cognitive_behavioral_therapy). 
+It is an online CMS based web solution for medical practitioners to create [Cognitive Based Therapy](https://en.wikipedia.org/wiki/Cognitive_behavioral_therapy). CCBT is more like Learning Management System where Cases are similar to course, Modules are similar to Lessons and Tasks are similar to topics. 
 
 
 # Roles
